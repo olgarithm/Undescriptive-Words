@@ -1,0 +1,37 @@
+h1 {
+	text-align: center;
+	margin: 30px;
+}
+
+p {
+	text-align: center;
+}
+
+textarea {
+	margin-top: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#button-container {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	margin-right: 10px;
+}
+
+#finished {
+	margin-top: 40px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+.highlighted {
+	background-color: #fff2ac;
+    background-image: linear-gradient(to right, #ffe359 0%, #fff2ac 100%);
+}
+
