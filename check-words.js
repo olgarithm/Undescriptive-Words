@@ -16,6 +16,7 @@
 
 	function checkWords() {
 		let text = id("text-to-check").value;
+		text = text.replace(/(\r\n|\n|\r)/gm, " ");
 		let textArray = text.split(" ");
 		let finishedText = "<p>Result: </p><p>";
 		for (let i = 0; i < textArray.length; i++) {
