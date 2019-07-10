@@ -20,7 +20,7 @@
 		let finishedText = "<p>Result: </p><p>";
 		for (let i = 0; i < textArray.length; i++) {
 			console.log(textArray[i]);
-			if (UNDESCRIPTIVE_WORDS.includes(textArray[i].toLowerCase())) {
+			if (UNDESCRIPTIVE_WORDS.includes(textArray[i].replace(/(~|`|!|@|#|$|%|^|&|\*|\(|\)|{|}|\[|\]|;|:|\"|'|<|,|\.|>|\?|\/|\\|\||-|_|\+|=)/g, "").toLowerCase())) {
 				finishedText += "<span class='highlighted'>" + textArray[i] + "</span> "; 
 			} else {
 				finishedText += textArray[i] + " ";
